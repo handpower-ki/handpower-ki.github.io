@@ -1,20 +1,17 @@
 <!--<この文書はHTML5であるという宣言>-->
-<!DOCTYPE html>
 
 <!--<ここからHTMLが始まるという開始タグ>-->
-<HTML>
+<!DOCTYPE html>
+<html lang="ja">
 
-<!--<ここからHEAD（ホームページに表示されない定義部分）タグが始まる>-->
-<HEAD>
-
+<head>
+ 
 <!--<以下の1行はスマホ表示用に追加(2022.4.9)>-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--<文字コードの宣言、UTF-8を宣言するとsafariでauto detectでもUTF-8でも化ける。Shift-JIS系だとOK。これはテキストエディトをMAC-OSではなくUTF-8にしても同じ。なにも宣言しない場合あるいはAuto-detect JISを宣言しても状況は同じで、auto-detectとshift-JIS系はOK。Windows系でも日本語Shift-JISはOK、UTF-8は不可。結果日本語はAuto-detect JISとする。英文は指定しないことにする>-->
-<meta charset="UTF-8">
-<!--<meta charset="Auto-detect JIS">-->
-<!--<meta charset=“Shift_JIS”>-->
 
+ <meta charset="UTF-8">
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTXDEMST8W"></script>
 <script>
@@ -25,16 +22,31 @@
   gtag('config', 'G-WTXDEMST8W');
 </script>
 
-<!--<Googleのトラッキングコード>-->
-
-
-
-<!--<ページのタイトル、ホームページのタイトル欄に表示される。>-->
-<TITLE>Healing with Hands</TITLE>
-
-<!--<CSS開始、style要素に書いているのはCSSであることの宣言>-->
-<style type="text/css">
-
+ <title>Healing with Hands</title>
+  
+<style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px; /* 図と本文の間にスペース */
+    }
+    .text {
+      width: 66.66%;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .image {
+      width: 33.33%;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+margin-top: 16em;
+    }
+    .full-text {
+      width: 100%;
+    }
+  
 /*字サイズ、字サイズに対応した色*/
 h1{color:black;}
 h2{color:black;}
@@ -44,87 +56,54 @@ span{color:red;}
 /*フォントサイズを120%とする*/
 p{font-size:120%}
 
-/*背景色（薄い橙色を背景色として指定*/
+/*背景色（薄い茶色を背景色として指定*/
 body{background:#ffcc99;}
 
-/*navi（上の選択項目）というリストの形式指定、リストの最初は点*/
-#navi{list-style-type:disc;}
 
-/*横に並べる*/
-#navi li{display:inline;}
 
-/*幅17%のブロック、背景色白、内側の余白、右の余白指定*/
-#navi li a {display:inline-block; width:17%; background:#ffffff; padding:5px; margin-right:5px;}
-
-/*アクセスすると色が変わる*/
-#navi li a:hover {background:#ff9966;}
-
-/*navi1（下の選択項目）という縦並びリストの形式指定、リストの最初は点*/
-#navi1{list-style-type:disc;}
-
-/*title枠の形式指定、内部は白、枠は緑*/
-#title{background:#ffffff; border:solid 5px green;}
-
-/*topics間の横線*/
-#topicsline{border:0; border-top:dashed 1px black;}
-
-/*footerの横線*/
-#footerline{border:0; border-top:dashed 1px #330000;}
-
-/*イメージの大きさ指定*/
-#image3{width:100%; height:100%}
-
-/*表示の幅固定*/
-#wrapper{width:900px;}
-
-/*style要素終了*/
 </style>
 
-<!--<ここでHEAD（ホームページに商事されない定義部分）タグが終わる>-->
-</HEAD>
 
-<!--<ここからbody（ホームページに表示される部分）タグが始まる>-->
+
+
+</head>
 <body>
 
-<div id="wrapper">
+<div class="container">
+<div class="text">
+
+
 
 <h3>
 <a href="P5.html">Japanese</a>
 </h3>
-<h1 style="font-size: 40px;">The Inner Peace Needed for Teate Therapy</h1> 
+<h1 style="font-size: 40px;"> The Inner Peace Needed for Teate Therapy </h1> 
 
-
-<!--<"navi"という名前のリスト開始>-->
-<ul id="navi">
-
-
-<!--<"navi"という名前のリスト終了>-->
-</ul>
-
-
-
-
-<!--<topicsの記述>-->
-<div id="topics">
-
-<!--<pで一つの段落を示す>-->
-
-
-
+ <p>
+<h2>
+<br> When we focus on the present moment, feel gratitude for what we have, let go of self-centered attachments, keep our hearts open, and embrace intuition and synchronicity, the bluebird of happiness—true inner peace—naturally comes to our side.
+</h2>
+</p>
 <p>
-
-
-When we focus on the present moment, feel gratitude for what we have, let go of self-centered attachments, keep our hearts open, and embrace intuition and synchronicity, the bluebird of happiness—true inner peace—naturally comes to our side.
-
-<br><br>
 To achieve such inner peace, consider the following thoughts and actions:
 <br><br>
 • Do not dwell on the past or worry about the future. Instead, appreciate and savor the blessings you have right now. This mindset can keep you happy throughout your life, because as long as you are alive, there are always some blessings present.
 
 <br><br>
 • When you feel unfairly treated, take a moment to reflect. You are sustained by countless gifts from nature—your heart beats, you breathe, you move, you think. These are miracles granted to you, far surpassing any misfortune.
+</p>
+      
 
-<br><br>
+</div>
+<div class="image">
+<img src="image3.jpg" alt="Happy Bluebird">
+</div>
+</div>
+
+<div class="full-text">
+
+<p>
+
 • All living beings share the same origin—if we trace back through generations, we all return to the first life form. Similarly, everything that exists in the universe shares the same source—going back in time, we all originate from the birth of the universe. The ultimate origin of everything is one. The sense of separation between self and others is an illusion born from ego. Diminishing this illusion—by letting go of self-centeredness—leads to enlightenment and brings us closer to happiness.
 
 <br><br>
@@ -149,9 +128,9 @@ The further back the realm, the higher the dimension. Valuing the highest—intu
 <br><br>
 • The world around you is, in truth, a reflection of your own awareness. The world you perceive is shaped by your consciousness. If you perceive it as peaceful and happy, that is the world you live in. Even if something seems otherwise, if you believe it will eventually become something positive, then even that event is part of a peaceful, happy world. Time always brings change, and if you always envision things becoming better, then everything becomes part of a happy world. Like attracts like—this is often referred to as the law of attraction—and eventually, even seemingly negative events disappear, leaving only elements of a peaceful and happy world.
 
-
-<!--<topics lineの挿入>-->
+   <!--<topics lineの挿入>-->
  <hr id="topicsline">
+<h4>
 <h4>
 Table of Contents
 <br><br>
@@ -164,7 +143,6 @@ Table of Contents
 <li><a href="P5.html">The Inner Peace Needed for Teate Therapy</a></li>
 <li><a href="P6.html">Qigong for Teate Therapy</a></li>
 <li><a href="P7.html">References</a></li></ul>
-
 
 </h4>
 

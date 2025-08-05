@@ -1,20 +1,17 @@
 <!--<この文書はHTML5であるという宣言>-->
-<!DOCTYPE html>
 
 <!--<ここからHTMLが始まるという開始タグ>-->
-<HTML>
+<!DOCTYPE html>
+<html lang="ja">
 
-<!--<ここからHEAD（ホームページに表示されない定義部分）タグが始まる>-->
-<HEAD>
-
+<head>
+ 
 <!--<以下の1行はスマホ表示用に追加(2022.4.9)>-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--<文字コードの宣言、UTF-8を宣言するとsafariでauto detectでもUTF-8でも化ける。Shift-JIS系だとOK。これはテキストエディトをMAC-OSではなくUTF-8にしても同じ。なにも宣言しない場合あるいはAuto-detect JISを宣言しても状況は同じで、auto-detectとshift-JIS系はOK。Windows系でも日本語Shift-JISはOK、UTF-8は不可。結果日本語はAuto-detect JISとする。英文は指定しないことにする>-->
-<meta charset="UTF-8">
-<!--<meta charset="Auto-detect JIS">-->
-<!--<meta charset=“Shift_JIS”>-->
 
+ <meta charset="UTF-8">
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTXDEMST8W"></script>
 <script>
@@ -25,16 +22,31 @@
   gtag('config', 'G-WTXDEMST8W');
 </script>
 
-<!--<Googleのトラッキングコード>-->
-
-
-
-<!--<ページのタイトル、ホームページのタイトル欄に表示される。>-->
-<TITLE>手当治療の実践</TITLE>
-
-<!--<CSS開始、style要素に書いているのはCSSであることの宣言>-->
-<style type="text/css">
-
+ <title>手当治療の実践</title>
+  
+<style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px; /* 図と本文の間にスペース */
+    }
+    .text {
+      width: 66.66%;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .image {
+      width: 33.33%;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+margin-top: 12em;
+    }
+    .full-text {
+      width: 100%;
+    }
+  
 /*字サイズ、字サイズに対応した色*/
 h1{color:black;}
 h2{color:black;}
@@ -44,84 +56,53 @@ span{color:red;}
 /*フォントサイズを120%とする*/
 p{font-size:120%}
 
-/*背景色（薄い橙色を背景色として指定*/
+/*背景色（薄い茶色を背景色として指定*/
 body{background:#ffcc99;}
 
-/*navi（上の選択項目）というリストの形式指定、リストの最初は点*/
-#navi{list-style-type:disc;}
 
-/*横に並べる*/
-#navi li{display:inline;}
 
-/*幅17%のブロック、背景色白、内側の余白、右の余白指定*/
-#navi li a {display:inline-block; width:17%; background:#ffffff; padding:5px; margin-right:5px;}
-
-/*アクセスすると色が変わる*/
-#navi li a:hover {background:#ff9966;}
-
-/*navi1（下の選択項目）という縦並びリストの形式指定、リストの最初は点*/
-#navi1{list-style-type:disc;}
-
-/*title枠の形式指定、内部は白、枠は緑*/
-#title{background:#ffffff; border:solid 5px green;}
-
-/*topics間の横線*/
-#topicsline{border:0; border-top:dashed 1px black;}
-
-/*footerの横線*/
-#footerline{border:0; border-top:dashed 1px #330000;}
-
-/*イメージの大きさ指定*/
-#image3{width:100%; height:100%}
-
-/*表示の幅固定*/
-#wrapper{width:900px;}
-
-/*style要素終了*/
 </style>
 
-<!--<ここでHEAD（ホームページに商事されない定義部分）タグが終わる>-->
-</HEAD>
 
-<!--<ここからbody（ホームページに表示される部分）タグが始まる>-->
+
+
+</head>
 <body>
 
-<div id="wrapper">
+<div class="container">
+<div class="text">
+
+
 
 <h3>
 <a href="P5English.html">English</a>
 </h3>
 <h1 style="font-size: 40px;">手当療法に必要な心の平和</h1> 
 
-
-<!--<"navi"という名前のリスト開始>-->
-<ul id="navi">
-
-
-<!--<"navi"という名前のリスト終了>-->
-</ul>
-
-
-
-
-<!--<topicsの記述>-->
-<div id="topics">
-
-<!--<pで一つの段落を示す>-->
-
-
-
+ <p>
+<h2>
+<br>現在に集中し、今ある恵みを感謝し、自己執着を無くして心を開き、直感と偶然を大切にしている時、幸せの青い鳥（心の平和）が、いつのまにか、そばに来ている。
+</h2>
+</p>
 <p>
-
-
-現在に集中し、今ある恵みを感謝し、自己執着を無くして心を開き、直感と偶然を大切にしている時、幸せの青い鳥（心の平和）が、いつのまにか、そばに来ている。
-<br><br>
 以下のように考えたり行動すれば、心の平和が得られるようです。
 <br><br>
 ・過去を悔やまず、未来を心配せず、今ある恵みを感謝して味わいましょう。すると一生幸せでいることができる。生きている限りどんな状況でも何らかの恵みがあるのだから。
 <br><br>
-・あなたが不当に扱われていると感じた時、ちょっと考えてみましょう。あなたは、それらと比較にならないくらいの多くの恵みを自然からもらって生きています。心臓は動き、呼吸もでき、動いたり、考えたり、まるで奇跡のようなことが自然から与えられています。
-<br><br>
+・あなたが不当に扱われていると感じた時、ちょっと考えてみましょう。あなたは、それらと比較にならないくらいの多くの恵みを自然からもらって生きています。心臓は動き、呼吸もでき、動いたり、考えたり、まるで奇跡のようなことが自然から与えられています。</p>
+      
+
+</div>
+<div class="image">
+<img src="image3.jpg" alt="幸せの青い鳥">
+</div>
+</div>
+
+<div class="full-text">
+<p>
+
+
+
 ・私たち命を持っているものは全て源流は同じ、なぜなら世代を遡っていけば最初の生命体に帰するから。同様に、この世に存在するものは全て源流は同じ、なぜなら過去に遡っていけば、最初の物質創生つまり宇宙の創生に帰するから。この世の全てのものは大元は一つ。自他という認識はエゴを持つ私たちの錯覚。この錯覚を小さくすれば、つまり自己執着を小さくすれば、悟りがひらけ幸せに近づきます。
 <br><br>
 ・私たちは、見たり聞いたり感じたりすることのできる世界（3次元の物理的世界）、思考や好悪や執着の世界（脳の世界）、直感の世界（魂の世界すなわち宇宙の法則の世界）、の3つの世界に住んでいます。後ろの世界ほど次元が高い世界であり、最も次元の高い直感の世界を大切にすることこそが、正しく、そして幸せに生きる秘訣です。なぜならこの世の全てを支配しているのは宇宙の法則だからです。
@@ -135,8 +116,7 @@ body{background:#ffcc99;}
 ・自己執着を取り除くのは、時として、とても難しいことがあります。自己執着自身が自己執着を取り除くのは困難です。そのような場合は思考を停止し、体を緩めることに専念しましょう。そうすれば自然のエネルギーが心身に流れ込み、自然に自己執着が小さくなります。
 <br><br>
 ・自分の周りの世界は、実際には、自分が認識した結果存在するものなので、自分の意識で作った世界と言えるでしょう。平和で幸せな世界だと意識すれば、平和で幸せな世界にいることになります。一見そう思えない事象があっても、今後望ましいものに変わると意識すれば、今でもその事象は平和で幸せな世界の要素になります。時間が経てば事象は必ず変化しますが、いつも今後望ましいものに変わると意識すれば、結局、いつも幸せな世界の要素です。実際、類は類を呼ぶ（引き寄せとも言われます）ことから、やがて、平和で幸せと思えない事象も無くなり、すべてが平和で幸せな世界の要素になります。
-
-<!--<topics lineの挿入>-->
+   <!--<topics lineの挿入>-->
  <hr id="topicsline">
 <h4>
 リンク

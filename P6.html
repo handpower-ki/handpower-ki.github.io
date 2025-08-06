@@ -1,20 +1,17 @@
 <!--<この文書はHTML5であるという宣言>-->
-<!DOCTYPE html>
 
 <!--<ここからHTMLが始まるという開始タグ>-->
-<HTML>
+<!DOCTYPE html>
+<html lang="ja">
 
-<!--<ここからHEAD（ホームページに表示されない定義部分）タグが始まる>-->
-<HEAD>
-
+<head>
+ 
 <!--<以下の1行はスマホ表示用に追加(2022.4.9)>-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--<文字コードの宣言、UTF-8を宣言するとsafariでauto detectでもUTF-8でも化ける。Shift-JIS系だとOK。これはテキストエディトをMAC-OSではなくUTF-8にしても同じ。なにも宣言しない場合あるいはAuto-detect JISを宣言しても状況は同じで、auto-detectとshift-JIS系はOK。Windows系でも日本語Shift-JISはOK、UTF-8は不可。結果日本語はAuto-detect JISとする。英文は指定しないことにする>-->
-<meta charset="UTF-8">
-<!--<meta charset="Auto-detect JIS">-->
-<!--<meta charset=“Shift_JIS”>-->
 
+ <meta charset="UTF-8">
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTXDEMST8W"></script>
 <script>
@@ -25,16 +22,31 @@
   gtag('config', 'G-WTXDEMST8W');
 </script>
 
-<!--<Googleのトラッキングコード>-->
-
-
-
-<!--<ページのタイトル、ホームページのタイトル欄に表示される。>-->
-<TITLE>手当治療の実践</TITLE>
-
-<!--<CSS開始、style要素に書いているのはCSSであることの宣言>-->
-<style type="text/css">
-
+ <title>手当治療の実践</title>
+  
+<style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px; /* 図と本文の間にスペース */
+    }
+    .text {
+      width: 80%;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .image {
+      width: 20%;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+margin-top: 12em;
+    }
+    .full-text {
+      width: 100%;
+    }
+  
 /*字サイズ、字サイズに対応した色*/
 h1{color:black;}
 h2{color:black;}
@@ -44,75 +56,37 @@ span{color:red;}
 /*フォントサイズを120%とする*/
 p{font-size:120%}
 
-/*背景色（薄い橙色を背景色として指定*/
+/*背景色（薄い茶色を背景色として指定*/
 body{background:#ffcc99;}
 
-/*navi（上の選択項目）というリストの形式指定、リストの最初は点*/
-#navi{list-style-type:disc;}
-
-/*横に並べる*/
-#navi li{display:inline;}
-
-/*幅17%のブロック、背景色白、内側の余白、右の余白指定*/
-#navi li a {display:inline-block; width:17%; background:#ffffff; padding:5px; margin-right:5px;}
-
-/*アクセスすると色が変わる*/
-#navi li a:hover {background:#ff9966;}
-
-/*navi1（下の選択項目）という縦並びリストの形式指定、リストの最初は点*/
-#navi1{list-style-type:disc;}
-
-/*title枠の形式指定、内部は白、枠は緑*/
-#title{background:#ffffff; border:solid 5px green;}
 
 /*topics間の横線*/
 #topicsline{border:0; border-top:dashed 1px black;}
 
-/*footerの横線*/
-#footerline{border:0; border-top:dashed 1px #330000;}
 
-/*イメージの大きさ指定*/
-#image3{width:100%; height:100%}
 
-/*表示の幅固定*/
-#wrapper{width:900px;}
 
-/*style要素終了*/
+
 </style>
 
-<!--<ここでHEAD（ホームページに商事されない定義部分）タグが終わる>-->
-</HEAD>
 
-<!--<ここからbody（ホームページに表示される部分）タグが始まる>-->
+
+
+</head>
 <body>
 
-<div id="wrapper">
+<div class="container">
+<div class="text">
+
+
 
 <h3>
 <a href="P6English.html">English</a>
 </h3>
 <h1 style="font-size: 40px;">手当療法のための気功</h1> 
 
-<!--<"navi"という名前のリスト開始>-->
-<ul id="navi">
-
-
-<!--<"navi"という名前のリスト終了>-->
-</ul>
-
-
-
-
-<!--<topicsの記述>-->
-<div id="topics">
-
-<!--<pで一つの段落を示す>-->
-
-
-
+ 
 <p>
-
-
 手当療法で、“気”の送受の力を高めるには、自分の中で“気”を巡らせたり、自分と体の外（宇宙）の間で“気”をやりとりする訓練（気功）が役立ちます。
 <br><br>
 (1) 自分で“気”を身体中巡らせる方法として、“気“を、小周天（会陰―督脈―百会―任脈―会陰）や、大周天（湧泉―督脈―百会―任脈―湧泉）で回す方法があります。例えば、息を吸いながら”気“の小さな球を会陰から督脈経由で百会に上げ、息を吐きながら百会から任脈経由で会陰に下げることを繰り返すなどです。巡らせ方は、自分にしっくりくる方法を見つければ良いようです。小周天や大周天はほとんどの気功法で取り入れられている基本操法です。
@@ -121,13 +95,24 @@ body{background:#ffcc99;}
 <br><br>
 (3) 気功は、時々思い出したように長時間やっても上達しません。毎日、短時間、例えば数十分やることを継続すれば、上達するようです。ただし、毎日少しづつ上達するのではなく、変化しない状態が続いてある日突然レベルが上がります。それを繰り返しているうちに、だんだんと上達しますが、ゴールはないようです。
 <br><br>
-(4) 気功の形式的な種類は、指導者の数だけ（すなわち数限りなく）あるようですが、目指している方向は、すべて共通して、「自己執着のない平和な心」です。「自己執着のない平和な心」への精進の一つが、気功と言えるのかも知れません。
+(4) 気功の形式的な種類は、指導者の数だけ（すなわち数限りなく）あるようですが、目指している方向は、すべて共通して、「自己執着のない平和な心」です。「自己執着のない平和な心」への精進の一つが、気功と言えるのかも知れません。      
+</p>
+
+</div>
+<div class="image">
+<img src="image4.jpg" alt="大周天と小周天">
+</div>
+</div>
+
+<div class="full-text">
+<p>
+
+
+
 
 
 </p>
-
-
-<!--<topics lineの挿入>-->
+   <!--<topics lineの挿入>-->
  <hr id="topicsline">
 <h4>
 リンク

@@ -1,20 +1,17 @@
 <!--<この文書はHTML5であるという宣言>-->
-<!DOCTYPE html>
 
 <!--<ここからHTMLが始まるという開始タグ>-->
-<HTML>
+<!DOCTYPE html>
+<html lang="ja">
 
-<!--<ここからHEAD（ホームページに表示されない定義部分）タグが始まる>-->
-<HEAD>
-
+<head>
+ 
 <!--<以下の1行はスマホ表示用に追加(2022.4.9)>-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--<文字コードの宣言、UTF-8を宣言するとsafariでauto detectでもUTF-8でも化ける。Shift-JIS系だとOK。これはテキストエディトをMAC-OSではなくUTF-8にしても同じ。なにも宣言しない場合あるいはAuto-detect JISを宣言しても状況は同じで、auto-detectとshift-JIS系はOK。Windows系でも日本語Shift-JISはOK、UTF-8は不可。結果日本語はAuto-detect JISとする。英文は指定しないことにする>-->
-<meta charset="UTF-8">
-<!--<meta charset="Auto-detect JIS">-->
-<!--<meta charset=“Shift_JIS”>-->
 
+ <meta charset="UTF-8">
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTXDEMST8W"></script>
 <script>
@@ -25,16 +22,31 @@
   gtag('config', 'G-WTXDEMST8W');
 </script>
 
-<!--<Googleのトラッキングコード>-->
-
-
-
-<!--<ページのタイトル、ホームページのタイトル欄に表示される。>-->
-<TITLE>Healing with Hands</TITLE>
-
-<!--<CSS開始、style要素に書いているのはCSSであることの宣言>-->
-<style type="text/css">
-
+ <title>Healing with Hands</title>
+  
+<style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px; /* 図と本文の間にスペース */
+    }
+    .text {
+      width: 80%;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+    .image {
+      width: 20%;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+margin-top: 12em;
+    }
+    .full-text {
+      width: 100%;
+    }
+  
 /*字サイズ、字サイズに対応した色*/
 h1{color:black;}
 h2{color:black;}
@@ -44,75 +56,37 @@ span{color:red;}
 /*フォントサイズを120%とする*/
 p{font-size:120%}
 
-/*背景色（薄い橙色を背景色として指定*/
+/*背景色（薄い茶色を背景色として指定*/
 body{background:#ffcc99;}
 
-/*navi（上の選択項目）というリストの形式指定、リストの最初は点*/
-#navi{list-style-type:disc;}
-
-/*横に並べる*/
-#navi li{display:inline;}
-
-/*幅17%のブロック、背景色白、内側の余白、右の余白指定*/
-#navi li a {display:inline-block; width:17%; background:#ffffff; padding:5px; margin-right:5px;}
-
-/*アクセスすると色が変わる*/
-#navi li a:hover {background:#ff9966;}
-
-/*navi1（下の選択項目）という縦並びリストの形式指定、リストの最初は点*/
-#navi1{list-style-type:disc;}
-
-/*title枠の形式指定、内部は白、枠は緑*/
-#title{background:#ffffff; border:solid 5px green;}
 
 /*topics間の横線*/
 #topicsline{border:0; border-top:dashed 1px black;}
 
-/*footerの横線*/
-#footerline{border:0; border-top:dashed 1px #330000;}
 
-/*イメージの大きさ指定*/
-#image3{width:100%; height:100%}
 
-/*表示の幅固定*/
-#wrapper{width:900px;}
 
-/*style要素終了*/
+
 </style>
 
-<!--<ここでHEAD（ホームページに商事されない定義部分）タグが終わる>-->
-</HEAD>
 
-<!--<ここからbody（ホームページに表示される部分）タグが始まる>-->
+
+
+</head>
 <body>
 
-<div id="wrapper">
+<div class="container">
+<div class="text">
+
+
 
 <h3>
 <a href="P6.html">Japanese</a>
 </h3>
 <h1 style="font-size: 40px;">Qigong for Teate Therapy</h1> 
 
-<!--<"navi"という名前のリスト開始>-->
-<ul id="navi">
-
-
-<!--<"navi"という名前のリスト終了>-->
-</ul>
-
-
-
-
-<!--<topicsの記述>-->
-<div id="topics">
-
-<!--<pで一つの段落を示す>-->
-
-
-
+ 
 <p>
-
-
 To enhance the ability to transmit and receive ki in Teate therapy, training that circulates ki within the body or exchanges ki between the body and the external universe—known as qigong—can be highly beneficial.
 
 <br><br>
@@ -129,14 +103,24 @@ For reference, I personally attended the classes of Master Shuten Suzuki, who ta
 (3) Qigong cannot be mastered by doing it sporadically for long periods. Rather, consistent daily practice—even just for several minutes—is key to progress. That said, improvement doesn’t occur in a linear fashion. Often, long plateaus are followed by sudden breakthroughs. This process repeats, leading to gradual mastery, although there appears to be no final goal.
 
 <br><br>
-(4) There are as many formal styles of qigong as there are instructors—in other words, virtually limitless variations. However, all styles share the same ultimate goal: a peaceful mind free from self-centered attachments. In this sense, qigong could be considered one path toward cultivating such a state of mind.
+(4) There are as many formal styles of qigong as there are instructors—in other words, virtually limitless variations. However, all styles share the same ultimate goal: a peaceful mind free from self-centered attachments. In this sense, qigong could be considered one path toward cultivating such a state of mind. 
+</p>
+
+</div>
+<div class="image">
+<img src="image5.jpg" alt="Qigong">
+</div>
+</div>
+
+<div class="full-text">
+<p>
+
+
 
 
 
 </p>
-
-
-<!--<topics lineの挿入>-->
+   <!--<topics lineの挿入>-->
  <hr id="topicsline">
 <h4>
 Table of Contents

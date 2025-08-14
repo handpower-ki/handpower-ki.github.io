@@ -90,6 +90,25 @@ body{background:#ffcc99;}
 /*表示の幅固定*/
 #wrapper{width:900px;}
 
+.intro-container {
+  display: flex;            /* 横並びにする */
+  align-items: flex-start;  /* 上揃え */
+  gap: 20px;                 /* 文章と画像の間の余白 */
+}
+
+.intro-text {
+  flex: 1;                  /* 幅の割合（1/2） */
+}
+
+.intro-image {
+  flex: 1;                  /* 幅の割合（2/2） */
+}
+
+.intro-image img {
+  width: 100%;              /* 枠いっぱいに表示 */
+  height: auto;             /* 縦横比維持 */
+  border-radius: 8px;       /* 角丸が欲しければ */
+
 /*style要素終了*/
 </style>
 
@@ -114,6 +133,9 @@ body{background:#ffcc99;}
 <!--<イメージの挿入と表示されなかった場合の表示語>-->
 <img id="image2" src="image2.jpg" alt="ホーム画像">
 
+<div class="intro-container">
+  <div class="intro-text">
+
 <h3>Table of Contents</h3>
 <ul id="navi1">
   <li><a href="English.html">Home</a></li>
@@ -126,7 +148,12 @@ body{background:#ffcc99;}
   <li><a href="P7English.html">References</a></li>
 </ul>
 
+</div>
 
+ <div class="intro-image">
+    <img src="image_teate.png" alt="説明テキスト">
+  </div>
+</div>
 
 
 <!--<topics lineの挿入>-->

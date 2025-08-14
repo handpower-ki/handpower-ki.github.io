@@ -90,6 +90,27 @@ body{background:#ffcc99;}
 /*表示の幅固定*/
 #wrapper{width:900px;}
 
+.intro-container {
+  display: flex;            /* 横並びにする */
+  align-items: flex-start;  /* 上揃え */
+  gap: 20px;                 /* 文章と画像の間の余白 */
+}
+
+.intro-text {
+  flex: 1;                  /* 幅の割合（1/2） */
+}
+
+.intro-image {
+  flex: 1;                  /* 幅の割合（2/2） */
+}
+
+.intro-image img {
+  width: 100%;              /* 枠いっぱいに表示 */
+  height: auto;             /* 縦横比維持 */
+  border-radius: 8px;       /* 角丸が欲しければ */
+
+
+
 /*style要素終了*/
 </style>
 
@@ -115,6 +136,9 @@ body{background:#ffcc99;}
 <!--<イメージの挿入と表示されなかった場合の表示語>-->
 <img id="image1" src="image1.jpg" alt="ホーム画像">
 
+<div class="intro-container">
+  <div class="intro-text">
+
 <h3>目次</h3>
 <ul id="navi1">
 <li><a href="index.html">ホーム</a></li>
@@ -127,12 +151,18 @@ body{background:#ffcc99;}
 <li><a href="P7.html">参考文献</a></li>
 </ul>
 
+</div>
 
+ <div class="intro-image">
+    <img src="image_teate.png" alt="説明テキスト">
+  </div>
+</div>
 
 <!--<topics lineの挿入>-->
  <hr id="topicsline">
 <p>
 <h1 style="font-size: 40px;">はじめに</h1> 
+
 
 
 　人に何らかの作用を及ぼすとされる、いわゆる“気”、については、一部の人はその実在を確信しているようですが、一部の人はそのような“気”の実在についてとても懐疑的です。またもっと多くの人にとっては“気”には殆ど関心が無いようです。
@@ -144,6 +174,10 @@ body{background:#ffcc99;}
 　手当による治療（手当療法）は、親が子を愛しんだり気遣ったりする原体験に通じることから、桜美林大学の山口創氏が述べているように、オキシトニン（幸せホルモン）の作用として心理的・医学的に説明されることもありますが、ここではそのような作用も含めて、“気”の作用であると考えます。
 <br><br>
 　著者の専門分野は工学で、“気”の専門家ではありませんが、“気”の性質や作用、治療について、個人的な経験と感触、知識を簡潔に紹介します。このホームページは2016年12月22日に開設して以来、少しづつ追記してきました。本ホームページは、多くの人にすぐ役立つ内容ではありませんが、一読していただければ、心にまかれた種となり、いつか必要な時に芽吹いて、何らかの役に立つものと思います。本ホームページでは、目次に示すような項目について説明します。
+
+
+
+ 
 
 <br><br>
 

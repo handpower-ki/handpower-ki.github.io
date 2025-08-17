@@ -35,6 +35,25 @@
 <!--<CSS開始、style要素に書いているのはCSSであることの宣言>-->
 <style type="text/css">
 
+.container {
+      display: flex;         /* 横並び */
+      align-items: flex-start; /* 上揃え */
+    }
+    .text {
+      flex: 2;  /* 左側：幅 2/3 */
+      padding: 10px;
+    }
+    .image {
+      flex: 1;  /* 右側：幅 1/3 */
+      padding: 10px;
+    }
+    .image img {
+      max-width: 100%;   /* 枠に収める */
+      height: auto;
+    }
+
+
+
 /*字サイズ、字サイズに対応した色*/
 h1{color:black;}
 h2{color:black;}
@@ -109,7 +128,8 @@ body{background:#ffcc99;}
 
 <!--<pで一つの段落を示す>-->
 
-
+ <div class="container">
+    <div class="text">
 
 <p>
 
@@ -119,6 +139,18 @@ body{background:#ffcc99;}
 <br><br>
 (2) Intention appears to be more effective during exhalation than inhalation, and ki seems to flow more easily when exhaling. The moment after exhaling completely—just before beginning to inhale—is when this effect is at its peak. According to Yojiro Katayama, an expert in seitai (a Japanese system of body alignment and therapy), this brief moment between “exhale” and “inhale” is considered especially important in the seitai tradition.
 
+</p>
+
+</div>
+
+    <div class="image">
+      <img src="image_kinote.png" alt="説明用の画像">
+    </div>
+</div>
+
+
+
+<p>
 <br><br>
 (3) Rather than thinking of emitting the ki that originally resides within oneself, it is more effective to imagine drawing in ki from the universe and allowing it to flow through your body and out again. If you believe you are using up your own ki, you may begin to feel as though you are depleting or exhausting your inner energy through healing.
 
@@ -131,6 +163,7 @@ body{background:#ffcc99;}
 <br><br>
 (6) It is often felt that ki flows more strongly from the Lao Gong (an energy point in the center of the palm) and from certain fingers—especially the middle and index fingers. When ki is actively flowing, people often report a tingling sensation in the palms. Sometimes, the palms may appear pink or show a mottled mix of pink and white. Some individuals describe the sensation as if the Lao Gong is gently vibrating.
 
+</p>
 
 <!--<topics lineの挿入>-->
  <hr id="topicsline">

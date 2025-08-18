@@ -35,6 +35,24 @@ P2English<!--<この文書はHTML5であるという宣言>-->
 <!--<CSS開始、style要素に書いているのはCSSであることの宣言>-->
 <style type="text/css">
 
+.container {
+      display: flex;         /* 横並び */
+      align-items: flex-start; /* 上揃え */
+    }
+    .text {
+      flex: 1;  /* 左側：幅 1/2 */
+      padding: 10px;
+    }
+    .image {
+      flex: 1;  /* 右側：幅 1/2 */
+      padding: 10px;
+    }
+    .image img {
+      max-width: 100%;   /* 枠に収める */
+      height: auto;
+    }
+
+
 /*字サイズ、字サイズに対応した色*/
 h1{color:black;}
 h2{color:black;}
@@ -100,6 +118,8 @@ body{background:#ffcc99;}
 <div id="topics">
 
 <!--<pで一つの段落を示す>-->
+<div class="container">
+    <div class="text">
 
 
 
@@ -113,7 +133,18 @@ People generally receive information or are affected by external stimuli through
 <br><br>
 Physically, ki is often imagined as a gaseous, flowing substance or as minute particles. Koichi Tohei, founder of the Shin Shin Toitsu Aikido, described ki (written by him as “氣”) as “an infinite gathering of infinitely small elements.” On the other hand, Reiki—a form of healing through touch initiated by Mikao Usui in the late Taisho era—is understood as a form of wave energy. In quantum mechanics, particles and waves are considered two aspects of the same thing, so rather than one being correct over the other, it is likely that both interpretations are valid.
 
-<br><br>
+</p>
+
+</div>
+
+    <div class="image">
+      <img src="image_kinote.png" alt="説明用の画像">
+    </div>
+</div>
+
+<p>
+
+
 In the sense of transmitting information or energy through something imperceptible to the five senses, ki is similar to electromagnetic waves. However, unlike electromagnetic waves, the transmission of information or energy through ki is not experienced in the same way by everyone, lacks reproducibility, and currently cannot be explained by modern science in terms of its mechanisms. These aspects mark a significant difference from electromagnetic wave transmission.
 
 <br><br>
